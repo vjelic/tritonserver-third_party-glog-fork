@@ -35,6 +35,9 @@ project(tritonthirdparty LANGUAGES C CXX)
 # source is downloaded/updated and is not defined by default so it
 # allows a good point to perform the source install.
 #
+
+option(TRITON_ENABLE_ROCM "Enable AMD GPU support" OFF)
+
 include(ExternalProject)
 if(NOT TRITON_THIRD_PARTY_INSTALL_PREFIX)
   message(FATAL_ERROR "TRITON_THIRD_PARTY_INSTALL_PREFIX must be set")
@@ -441,6 +444,7 @@ ExternalProject_Add(cnmem
   CMAKE_CACHE_ARGS
     ${_CMAKE_ARGS_CMAKE_TOOLCHAIN_FILE}
     ${_CMAKE_ARGS_VCPKG_TARGET_TRIPLET}
+    -DTRITON_ENABLE_ROCM:BOOL=${TRITON_ENABLE_ROCM}
     -DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=ON
     -DCMAKE_INSTALL_PREFIX:PATH=${TRITON_THIRD_PARTY_INSTALL_PREFIX}/cnmem
   PATCH_COMMAND python3 ${CMAKE_CURRENT_SOURCE_DIR}/tools/install_src.py --src <SOURCE_DIR> ${INSTALL_SRC_DEST_ARG}
