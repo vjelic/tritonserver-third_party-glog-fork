@@ -69,35 +69,6 @@
               }
             },
             {
-              "id": "d60dd103-f537-38c9-984d-03a7db8c764c",
-              "name": "OpensslDoNotHardcodeSsltlsVersionsWithinAnApplication",
-              "shortDescription": {
-                "text": "SSL/TLS version usage should be based on an OS or external configuration."
-              },
-              "fullDescription": {
-                "text": "OpenSSL: Do not hardcode SSL/TLS versions within an application.: SSL/TLS version usage should be based on an OS or external configuration."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md",
-              "help": {
-                "text": "SSL/TLS version usage should be based on an OS or external configuration.",
-                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md) for guidance on this issue."
-              },
-              "properties": {
-                "DevSkimSeverity": "Important",
-                "DevSkimConfidence": "High",
-                "precision": "high",
-                "problem.severity": "warning",
-                "tags": [
-                  "DS440010",
-                  "d60dd103-f537-38c9-984d-03a7db8c764c"
-                ]
-              }
-            },
-            {
               "id": "4bb3ca81-05aa-3af0-9604-d8054225f7d0",
               "name": "OpensslDoNotHardcodeSsltlsVersionsWithinAnApplication",
               "shortDescription": {
@@ -123,6 +94,35 @@
                 "tags": [
                   "DS440010",
                   "4bb3ca81-05aa-3af0-9604-d8054225f7d0"
+                ]
+              }
+            },
+            {
+              "id": "d60dd103-f537-38c9-984d-03a7db8c764c",
+              "name": "OpensslHardcodedSsltlsProtocol",
+              "shortDescription": {
+                "text": "OpenSSL: Hard-coded SSL/TLS Protocol"
+              },
+              "fullDescription": {
+                "text": "OpenSSL: Hard-coded SSL/TLS Protocol: OpenSSL: Hard-coded SSL/TLS Protocol"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md",
+              "help": {
+                "text": "Review to ensure that a TLS protocol agility is maintained.",
+                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md) for guidance on this issue."
+              },
+              "properties": {
+                "DevSkimSeverity": "ManualReview",
+                "DevSkimConfidence": "High",
+                "precision": "high",
+                "problem.severity": "recommendation",
+                "tags": [
+                  "DS440011",
+                  "d60dd103-f537-38c9-984d-03a7db8c764c"
                 ]
               }
             },
@@ -157,29 +157,29 @@
             },
             {
               "id": "d60dd103-f537-38c9-984d-03a7db8c764c",
-              "name": "OpensslHardcodedSsltlsProtocol",
+              "name": "OpensslDoNotHardcodeSsltlsVersionsWithinAnApplication",
               "shortDescription": {
-                "text": "OpenSSL: Hard-coded SSL/TLS Protocol"
+                "text": "SSL/TLS version usage should be based on an OS or external configuration."
               },
               "fullDescription": {
-                "text": "OpenSSL: Hard-coded SSL/TLS Protocol: OpenSSL: Hard-coded SSL/TLS Protocol"
+                "text": "OpenSSL: Do not hardcode SSL/TLS versions within an application.: SSL/TLS version usage should be based on an OS or external configuration."
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "note"
+                "level": "error"
               },
-              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md",
+              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md",
               "help": {
-                "text": "Review to ensure that a TLS protocol agility is maintained.",
-                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md) for guidance on this issue."
+                "text": "SSL/TLS version usage should be based on an OS or external configuration.",
+                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md) for guidance on this issue."
               },
               "properties": {
-                "DevSkimSeverity": "ManualReview",
+                "DevSkimSeverity": "Important",
                 "DevSkimConfidence": "High",
                 "precision": "high",
-                "problem.severity": "recommendation",
+                "problem.severity": "warning",
                 "tags": [
-                  "DS440011"
+                  "DS440010"
                 ]
               }
             },
@@ -385,6 +385,34 @@
               }
             },
             {
+              "id": "32b12137-87fb-3667-902c-28a855efbb4b",
+              "name": "OpensslHardcodedSsltlsProtocol",
+              "shortDescription": {
+                "text": "OpenSSL: Hard-coded SSL/TLS Protocol"
+              },
+              "fullDescription": {
+                "text": "OpenSSL: Hard-coded SSL/TLS Protocol: OpenSSL: Hard-coded SSL/TLS Protocol"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md",
+              "help": {
+                "text": "Review to ensure that a TLS protocol agility is maintained.",
+                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md) for guidance on this issue."
+              },
+              "properties": {
+                "DevSkimSeverity": "ManualReview",
+                "DevSkimConfidence": "High",
+                "precision": "high",
+                "problem.severity": "recommendation",
+                "tags": [
+                  "DS440011"
+                ]
+              }
+            },
+            {
               "id": "7f0bb33b-b52d-30df-96f5-9a535876d677",
               "name": "OpensslDoNotHardcodeSsltlsVersionsWithinAnApplication",
               "shortDescription": {
@@ -410,34 +438,6 @@
                 "tags": [
                   "DS440010",
                   "7f0bb33b-b52d-30df-96f5-9a535876d677"
-                ]
-              }
-            },
-            {
-              "id": "32b12137-87fb-3667-902c-28a855efbb4b",
-              "name": "OpensslHardcodedSsltlsProtocol",
-              "shortDescription": {
-                "text": "OpenSSL: Hard-coded SSL/TLS Protocol"
-              },
-              "fullDescription": {
-                "text": "OpenSSL: Hard-coded SSL/TLS Protocol: OpenSSL: Hard-coded SSL/TLS Protocol"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md",
-              "help": {
-                "text": "Review to ensure that a TLS protocol agility is maintained.",
-                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md) for guidance on this issue."
-              },
-              "properties": {
-                "DevSkimSeverity": "ManualReview",
-                "DevSkimConfidence": "High",
-                "precision": "high",
-                "problem.severity": "recommendation",
-                "tags": [
-                  "DS440011"
                 ]
               }
             },
@@ -556,63 +556,6 @@
               }
             },
             {
-              "id": "5b63b4d5-39a5-3746-b090-0c8291ecc99f",
-              "name": "OpensslHardcodedSsltlsProtocol",
-              "shortDescription": {
-                "text": "OpenSSL: Hard-coded SSL/TLS Protocol"
-              },
-              "fullDescription": {
-                "text": "OpenSSL: Hard-coded SSL/TLS Protocol: OpenSSL: Hard-coded SSL/TLS Protocol"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md",
-              "help": {
-                "text": "Review to ensure that a TLS protocol agility is maintained.",
-                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md) for guidance on this issue."
-              },
-              "properties": {
-                "DevSkimSeverity": "ManualReview",
-                "DevSkimConfidence": "High",
-                "precision": "high",
-                "problem.severity": "recommendation",
-                "tags": [
-                  "DS440011",
-                  "5b63b4d5-39a5-3746-b090-0c8291ecc99f"
-                ]
-              }
-            },
-            {
-              "id": "5b63b4d5-39a5-3746-b090-0c8291ecc99f",
-              "name": "OpensslDoNotHardcodeSsltlsVersionsWithinAnApplication",
-              "shortDescription": {
-                "text": "SSL/TLS version usage should be based on an OS or external configuration."
-              },
-              "fullDescription": {
-                "text": "OpenSSL: Do not hardcode SSL/TLS versions within an application.: SSL/TLS version usage should be based on an OS or external configuration."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md",
-              "help": {
-                "text": "SSL/TLS version usage should be based on an OS or external configuration.",
-                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md) for guidance on this issue."
-              },
-              "properties": {
-                "DevSkimSeverity": "Important",
-                "DevSkimConfidence": "High",
-                "precision": "high",
-                "problem.severity": "warning",
-                "tags": [
-                  "DS440010"
-                ]
-              }
-            },
-            {
               "id": "cde0b348-967c-3147-870c-5ec9c6507072",
               "name": "OpensslDoNotHardcodeSsltlsVersionsWithinAnApplication",
               "shortDescription": {
@@ -638,6 +581,63 @@
                 "tags": [
                   "DS440010",
                   "cde0b348-967c-3147-870c-5ec9c6507072"
+                ]
+              }
+            },
+            {
+              "id": "5b63b4d5-39a5-3746-b090-0c8291ecc99f",
+              "name": "OpensslDoNotHardcodeSsltlsVersionsWithinAnApplication",
+              "shortDescription": {
+                "text": "SSL/TLS version usage should be based on an OS or external configuration."
+              },
+              "fullDescription": {
+                "text": "OpenSSL: Do not hardcode SSL/TLS versions within an application.: SSL/TLS version usage should be based on an OS or external configuration."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md",
+              "help": {
+                "text": "SSL/TLS version usage should be based on an OS or external configuration.",
+                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md) for guidance on this issue."
+              },
+              "properties": {
+                "DevSkimSeverity": "Important",
+                "DevSkimConfidence": "High",
+                "precision": "high",
+                "problem.severity": "warning",
+                "tags": [
+                  "DS440010",
+                  "5b63b4d5-39a5-3746-b090-0c8291ecc99f"
+                ]
+              }
+            },
+            {
+              "id": "5b63b4d5-39a5-3746-b090-0c8291ecc99f",
+              "name": "OpensslHardcodedSsltlsProtocol",
+              "shortDescription": {
+                "text": "OpenSSL: Hard-coded SSL/TLS Protocol"
+              },
+              "fullDescription": {
+                "text": "OpenSSL: Hard-coded SSL/TLS Protocol: OpenSSL: Hard-coded SSL/TLS Protocol"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md",
+              "help": {
+                "text": "Review to ensure that a TLS protocol agility is maintained.",
+                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md) for guidance on this issue."
+              },
+              "properties": {
+                "DevSkimSeverity": "ManualReview",
+                "DevSkimConfidence": "High",
+                "precision": "high",
+                "problem.severity": "recommendation",
+                "tags": [
+                  "DS440011"
                 ]
               }
             },
@@ -671,35 +671,6 @@
             },
             {
               "id": "4e7d7c5e-62e1-3e45-96f8-c7a4de267d44",
-              "name": "OpensslDoNotHardcodeSsltlsVersionsWithinAnApplication",
-              "shortDescription": {
-                "text": "SSL/TLS version usage should be based on an OS or external configuration."
-              },
-              "fullDescription": {
-                "text": "OpenSSL: Do not hardcode SSL/TLS versions within an application.: SSL/TLS version usage should be based on an OS or external configuration."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md",
-              "help": {
-                "text": "SSL/TLS version usage should be based on an OS or external configuration.",
-                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md) for guidance on this issue."
-              },
-              "properties": {
-                "DevSkimSeverity": "Important",
-                "DevSkimConfidence": "High",
-                "precision": "high",
-                "problem.severity": "warning",
-                "tags": [
-                  "DS440010",
-                  "4e7d7c5e-62e1-3e45-96f8-c7a4de267d44"
-                ]
-              }
-            },
-            {
-              "id": "4e7d7c5e-62e1-3e45-96f8-c7a4de267d44",
               "name": "OpensslHardcodedSsltlsProtocol",
               "shortDescription": {
                 "text": "OpenSSL: Hard-coded SSL/TLS Protocol"
@@ -722,7 +693,8 @@
                 "precision": "high",
                 "problem.severity": "recommendation",
                 "tags": [
-                  "DS440011"
+                  "DS440011",
+                  "4e7d7c5e-62e1-3e45-96f8-c7a4de267d44"
                 ]
               }
             },
@@ -756,6 +728,34 @@
               }
             },
             {
+              "id": "4e7d7c5e-62e1-3e45-96f8-c7a4de267d44",
+              "name": "OpensslDoNotHardcodeSsltlsVersionsWithinAnApplication",
+              "shortDescription": {
+                "text": "SSL/TLS version usage should be based on an OS or external configuration."
+              },
+              "fullDescription": {
+                "text": "OpenSSL: Do not hardcode SSL/TLS versions within an application.: SSL/TLS version usage should be based on an OS or external configuration."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md",
+              "help": {
+                "text": "SSL/TLS version usage should be based on an OS or external configuration.",
+                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md) for guidance on this issue."
+              },
+              "properties": {
+                "DevSkimSeverity": "Important",
+                "DevSkimConfidence": "High",
+                "precision": "high",
+                "problem.severity": "warning",
+                "tags": [
+                  "DS440010"
+                ]
+              }
+            },
+            {
               "id": "0dfddb28-33b4-33fe-bf02-293146d5ea64",
               "name": "DoNotUseOutdatedSsltlsProtocols",
               "shortDescription": {
@@ -780,6 +780,34 @@
                 "problem.severity": "warning",
                 "tags": [
                   "DS169125"
+                ]
+              }
+            },
+            {
+              "id": "922a0894-2a4d-385f-b66b-c1d9081dea04",
+              "name": "OpensslDoNotHardcodeSsltlsVersionsWithinAnApplication",
+              "shortDescription": {
+                "text": "SSL/TLS version usage should be based on an OS or external configuration."
+              },
+              "fullDescription": {
+                "text": "OpenSSL: Do not hardcode SSL/TLS versions within an application.: SSL/TLS version usage should be based on an OS or external configuration."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md",
+              "help": {
+                "text": "SSL/TLS version usage should be based on an OS or external configuration.",
+                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md) for guidance on this issue."
+              },
+              "properties": {
+                "DevSkimSeverity": "Important",
+                "DevSkimConfidence": "High",
+                "precision": "high",
+                "problem.severity": "warning",
+                "tags": [
+                  "DS440010"
                 ]
               }
             },
@@ -870,6 +898,35 @@
               }
             },
             {
+              "id": "8b1d6329-c3ee-307a-b8ef-fea99c8befd5",
+              "name": "OpensslDoNotHardcodeSsltlsVersionsWithinAnApplication",
+              "shortDescription": {
+                "text": "SSL/TLS version usage should be based on an OS or external configuration."
+              },
+              "fullDescription": {
+                "text": "OpenSSL: Do not hardcode SSL/TLS versions within an application.: SSL/TLS version usage should be based on an OS or external configuration."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md",
+              "help": {
+                "text": "SSL/TLS version usage should be based on an OS or external configuration.",
+                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md) for guidance on this issue."
+              },
+              "properties": {
+                "DevSkimSeverity": "Important",
+                "DevSkimConfidence": "High",
+                "precision": "high",
+                "problem.severity": "warning",
+                "tags": [
+                  "DS440010",
+                  "8b1d6329-c3ee-307a-b8ef-fea99c8befd5"
+                ]
+              }
+            },
+            {
               "id": "68618178-aa2a-3cd2-a462-437a3dd8dfff",
               "name": "OpensslDoNotHardcodeSsltlsVersionsWithinAnApplication",
               "shortDescription": {
@@ -927,35 +984,6 @@
               }
             },
             {
-              "id": "8b1d6329-c3ee-307a-b8ef-fea99c8befd5",
-              "name": "OpensslDoNotHardcodeSsltlsVersionsWithinAnApplication",
-              "shortDescription": {
-                "text": "SSL/TLS version usage should be based on an OS or external configuration."
-              },
-              "fullDescription": {
-                "text": "OpenSSL: Do not hardcode SSL/TLS versions within an application.: SSL/TLS version usage should be based on an OS or external configuration."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md",
-              "help": {
-                "text": "SSL/TLS version usage should be based on an OS or external configuration.",
-                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md) for guidance on this issue."
-              },
-              "properties": {
-                "DevSkimSeverity": "Important",
-                "DevSkimConfidence": "High",
-                "precision": "high",
-                "problem.severity": "warning",
-                "tags": [
-                  "DS440010",
-                  "8b1d6329-c3ee-307a-b8ef-fea99c8befd5"
-                ]
-              }
-            },
-            {
               "id": "2cd92d8a-235e-316b-add7-6de9f81073b3",
               "name": "OpensslDoNotHardcodeSsltlsVersionsWithinAnApplication",
               "shortDescription": {
@@ -981,34 +1009,6 @@
                 "tags": [
                   "DS440010",
                   "2cd92d8a-235e-316b-add7-6de9f81073b3"
-                ]
-              }
-            },
-            {
-              "id": "2cd92d8a-235e-316b-add7-6de9f81073b3",
-              "name": "OpensslHardcodedSsltlsProtocol",
-              "shortDescription": {
-                "text": "OpenSSL: Hard-coded SSL/TLS Protocol"
-              },
-              "fullDescription": {
-                "text": "OpenSSL: Hard-coded SSL/TLS Protocol: OpenSSL: Hard-coded SSL/TLS Protocol"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md",
-              "help": {
-                "text": "Review to ensure that a TLS protocol agility is maintained.",
-                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md) for guidance on this issue."
-              },
-              "properties": {
-                "DevSkimSeverity": "ManualReview",
-                "DevSkimConfidence": "High",
-                "precision": "high",
-                "problem.severity": "recommendation",
-                "tags": [
-                  "DS440011"
                 ]
               }
             },
@@ -1042,7 +1042,7 @@
               }
             },
             {
-              "id": "5de29026-2bef-3943-b3a5-7c73658a20ea",
+              "id": "2cd92d8a-235e-316b-add7-6de9f81073b3",
               "name": "OpensslHardcodedSsltlsProtocol",
               "shortDescription": {
                 "text": "OpenSSL: Hard-coded SSL/TLS Protocol"
@@ -1065,8 +1065,7 @@
                 "precision": "high",
                 "problem.severity": "recommendation",
                 "tags": [
-                  "DS440011",
-                  "5de29026-2bef-3943-b3a5-7c73658a20ea"
+                  "DS440011"
                 ]
               }
             },
@@ -1096,6 +1095,35 @@
                 "tags": [
                   "DS440010",
                   "ab23b49c-23ab-36b8-ab32-29e4eb0955e2"
+                ]
+              }
+            },
+            {
+              "id": "5de29026-2bef-3943-b3a5-7c73658a20ea",
+              "name": "OpensslHardcodedSsltlsProtocol",
+              "shortDescription": {
+                "text": "OpenSSL: Hard-coded SSL/TLS Protocol"
+              },
+              "fullDescription": {
+                "text": "OpenSSL: Hard-coded SSL/TLS Protocol: OpenSSL: Hard-coded SSL/TLS Protocol"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md",
+              "help": {
+                "text": "Review to ensure that a TLS protocol agility is maintained.",
+                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440001.md) for guidance on this issue."
+              },
+              "properties": {
+                "DevSkimSeverity": "ManualReview",
+                "DevSkimConfidence": "High",
+                "precision": "high",
+                "problem.severity": "recommendation",
+                "tags": [
+                  "DS440011",
+                  "5de29026-2bef-3943-b3a5-7c73658a20ea"
                 ]
               }
             },
@@ -1274,34 +1302,6 @@
               }
             },
             {
-              "id": "922a0894-2a4d-385f-b66b-c1d9081dea04",
-              "name": "OpensslDoNotHardcodeSsltlsVersionsWithinAnApplication",
-              "shortDescription": {
-                "text": "SSL/TLS version usage should be based on an OS or external configuration."
-              },
-              "fullDescription": {
-                "text": "OpenSSL: Do not hardcode SSL/TLS versions within an application.: SSL/TLS version usage should be based on an OS or external configuration."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md",
-              "help": {
-                "text": "SSL/TLS version usage should be based on an OS or external configuration.",
-                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md) for guidance on this issue."
-              },
-              "properties": {
-                "DevSkimSeverity": "Important",
-                "DevSkimConfidence": "High",
-                "precision": "high",
-                "problem.severity": "warning",
-                "tags": [
-                  "DS440010"
-                ]
-              }
-            },
-            {
               "id": "152855ca-1413-3753-93ad-fc79c5f030c7",
               "name": "OpensslDoNotHardcodeSsltlsVersionsWithinAnApplication",
               "shortDescription": {
@@ -1475,35 +1475,6 @@
               }
             },
             {
-              "id": "258fd485-3d11-323d-b02d-14e18b8d1024",
-              "name": "Win32HardcodedSsltlsProtocol",
-              "shortDescription": {
-                "text": "Win32 - Hard-coded SSL/TLS Protocol"
-              },
-              "fullDescription": {
-                "text": "Win32 - Hard-coded SSL/TLS Protocol: Win32 - Hard-coded SSL/TLS Protocol"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md",
-              "help": {
-                "text": "Review to ensure that a TLS protocol agility is maintained.",
-                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md) for guidance on this issue."
-              },
-              "properties": {
-                "DevSkimSeverity": "ManualReview",
-                "DevSkimConfidence": "High",
-                "precision": "high",
-                "problem.severity": "recommendation",
-                "tags": [
-                  "DS440077",
-                  "258fd485-3d11-323d-b02d-14e18b8d1024"
-                ]
-              }
-            },
-            {
               "id": "28272930-20eb-34db-b37a-e1fc955b07b1",
               "name": "Win32HardcodedSsltlsProtocol",
               "shortDescription": {
@@ -1529,6 +1500,35 @@
                 "tags": [
                   "DS440077",
                   "28272930-20eb-34db-b37a-e1fc955b07b1"
+                ]
+              }
+            },
+            {
+              "id": "258fd485-3d11-323d-b02d-14e18b8d1024",
+              "name": "Win32HardcodedSsltlsProtocol",
+              "shortDescription": {
+                "text": "Win32 - Hard-coded SSL/TLS Protocol"
+              },
+              "fullDescription": {
+                "text": "Win32 - Hard-coded SSL/TLS Protocol: Win32 - Hard-coded SSL/TLS Protocol"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md",
+              "help": {
+                "text": "Review to ensure that a TLS protocol agility is maintained.",
+                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS440000.md) for guidance on this issue."
+              },
+              "properties": {
+                "DevSkimSeverity": "ManualReview",
+                "DevSkimConfidence": "High",
+                "precision": "high",
+                "problem.severity": "recommendation",
+                "tags": [
+                  "DS440077",
+                  "258fd485-3d11-323d-b02d-14e18b8d1024"
                 ]
               }
             },
@@ -1887,46 +1887,6 @@
           }
         },
         {
-          "ruleId": "de1618d8-5944-39ee-9699-f768ddedde39",
-          "kind": "fail",
-          "level": "error",
-          "message": {
-            "text": "Do not use outdated SSL/TLS protocols"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "libevhtp/libevhtp/examples/https/example_https_server.c"
-                },
-                "region": {
-                  "startLine": 170,
-                  "startColumn": 41,
-                  "endLine": 170,
-                  "endColumn": 46,
-                  "charOffset": 6368,
-                  "charLength": 5,
-                  "snippet": {
-                    "text": "SSLv2",
-                    "rendered": {
-                      "text": "SSLv2",
-                      "markdown": "`SSLv2`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "Important",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "Cryptography.Protocol.TLS"
-            ]
-          }
-        },
-        {
           "ruleId": "922a0894-2a4d-385f-b66b-c1d9081dea04",
           "kind": "fail",
           "level": "error",
@@ -1963,6 +1923,46 @@
             "DevSkimConfidence": "High",
             "tags": [
               "Cryptography.Protocol.TLS.Hardcoded"
+            ]
+          }
+        },
+        {
+          "ruleId": "de1618d8-5944-39ee-9699-f768ddedde39",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Do not use outdated SSL/TLS protocols"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "libevhtp/libevhtp/examples/https/example_https_server.c"
+                },
+                "region": {
+                  "startLine": 170,
+                  "startColumn": 41,
+                  "endLine": 170,
+                  "endColumn": 46,
+                  "charOffset": 6368,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "SSLv2",
+                    "rendered": {
+                      "text": "SSLv2",
+                      "markdown": "`SSLv2`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.Protocol.TLS"
             ]
           }
         },
